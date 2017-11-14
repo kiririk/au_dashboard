@@ -1,0 +1,44 @@
+<html>
+<style>
+.forbidden-sign {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0.75em;
+  height: 0.75em;
+  position: relative;
+  border: 0.15em solid #ff0000;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  font: normal 8em/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+}
+
+.forbidden-sign::after {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0.85em;
+  height: 0.15em;
+  position: absolute;
+  content: "";
+  top: 0.3em;
+  left: -0.05em;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #ff0000;
+  text-shadow: none;
+  -webkit-transform: rotateZ(-45deg)   ;
+  transform: rotateZ(-45deg)   ;
+}
+</style>
+<body bgcolor="#FFFFFF">
+<div class="forbidden-sign"></div>
+</body></html>
